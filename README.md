@@ -16,3 +16,8 @@ node app
 
 
 Questions and suggestions for improvement are welcome.
+
+Check the demo 
+
+http://nodecms.cube-space.net/
+
