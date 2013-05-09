@@ -17,6 +17,9 @@ var db = new MongoDB(dbName, new Server(dbHost, dbPort, {auto_reconnect: true}),
                 console.log('connected to database :: ' + dbName);
        		d.authenticate(dbUser, dbPass, function(err, res) {
   			db = res;
+			if(err){
+				console.log(err);
+			}
 		});
 	 }
 });
