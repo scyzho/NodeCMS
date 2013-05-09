@@ -1,4 +1,4 @@
-#[Node-CMS]
+Node Simple CMS
 ####A basic NodeCMS management system built in Node.js with the following features :
 
 * Theme
