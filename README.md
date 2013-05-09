@@ -3,20 +3,23 @@ Node Simple CMS
 
 * Theme
 * Post Content
-
+* Plugins
+* Widget
 
 ####Installation & Setup
 
-Configure the mongodb Setup 
+Configure the mongodb Setup Connector
 
 NodeCMS\app\server\modules\databaseconnect.js
 
+```
 var dbPort              = 27017;
 var dbHost              = 'localhost';
 var dbUser  	          = 'nodecms';
 var dbPass		          = 'nodecmsmongo';
 var dbName              = 'nodecms';
 
+```
 
 This assumes you already have node.js & npm installed.
 ```
