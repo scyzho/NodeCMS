@@ -6,10 +6,22 @@ Node Simple CMS
 
 
 ####Installation & Setup
+
+Configure the mongodb Setup 
+
+NodeCMS\app\server\modules\databaseconnect.js
+
+var dbPort              = 27017;
+var dbHost              = 'localhost';
+var dbUser  	          = 'nodecms';
+var dbPass		          = 'nodecmsmongo';
+var dbName              = 'nodecms';
+
+
 This assumes you already have node.js & npm installed.
 ```
 git clone https://github.com/adrivanrex/NodeCMS.git
-cd node-login
+cd nodeCMS
 npm install -d
 node app
 ```
@@ -20,4 +32,8 @@ Questions and suggestions for improvement are welcome.
 Check the demo 
 
 http://nodecms.cube-space.net/
+
+
+
+
 
