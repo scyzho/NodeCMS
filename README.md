@@ -5,6 +5,7 @@ Node Simple CMS
 * Post Content
 * Plugins
 * Widget
+* Web and Any Mobile Responsive Design
 
 ####Installation & Setup
 
