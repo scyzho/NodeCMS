@@ -32,6 +32,9 @@ node startApp.js
 
 Questions and suggestions for improvement are welcome.
 
+Skype  @adrivanrex
+facebook @http://facebook.com/adrivanrex
+
 Check the demo 
 
 http://nodecms.cube-space.net/
