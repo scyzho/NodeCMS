@@ -33,7 +33,7 @@ node startApp.js
 Questions and suggestions for improvement are welcome.
 
 Skype  @adrivanrex
-facebook @http://facebook.com/adrivanrex
+facebook @http://facebook.com/radrivan
 
 Check the demo 
 
