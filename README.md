@@ -26,7 +26,7 @@ This assumes you already have node.js & npm installed.
 git clone https://github.com/adrivanrex/NodeCMS.git
 cd nodeCMS
 npm install -d
-node app
+node startApp.js
 ```
 
 
