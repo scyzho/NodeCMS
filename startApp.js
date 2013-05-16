@@ -1,6 +1,13 @@
 var express = require('express');
 var http = require('http');
 var app = express();
+var fs = require('fs');
+var db = require('./app/server/modules/databaseconnect');
+var ThemeNames = fs.readdirSync('./app/server/themes');
+
+
+var theme = db.collection('themes');
+
 
 app.configure(function(){
 	app.set('port', 8080);
