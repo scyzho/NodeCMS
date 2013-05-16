@@ -38,7 +38,8 @@ facebook @http://facebook.com/radrivan
 
 Check the demo 
 
-http://nodecms.cube-space.net/
+http://nodecms.cube-space.net:8081
+
 
 
 
