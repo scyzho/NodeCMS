@@ -1,0 +1,328 @@
+!!! 5
+html(lang='en')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(charset='utf-8')
+    // Title and other stuffs
+    title
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='keywords', content='')
+    meta(name='author', content='')
+    // Stylesheets
+    link(href='style/bootstrap.css', rel='stylesheet')
+    // Font awesome icon
+    link(rel='stylesheet', href='style/font-awesome.css')
+    // jQuery UI
+    link(rel='stylesheet', href='style/jquery-ui.css')
+    // Calendar
+    link(rel='stylesheet', href='style/fullcalendar.css')
+    // prettyPhoto
+    link(rel='stylesheet', href='style/prettyPhoto.css')
+    // Star rating
+    link(rel='stylesheet', href='style/rateit.css')
+    // Date picker
+    link(rel='stylesheet', href='style/bootstrap-datetimepicker.min.css')
+    // jQuery Gritter
+    link(rel='stylesheet', href='style/jquery.gritter.css')
+    // CLEditor
+    link(rel='stylesheet', href='style/jquery.cleditor.css')
+    // Bootstrap toggle
+    link(rel='stylesheet', href='style/bootstrap-toggle-buttons.css')
+    // Main stylesheet
+    link(href='style/style.css', rel='stylesheet')
+    // Widgets stylesheet
+    link(href='style/widgets.css', rel='stylesheet')
+    // Responsive style (from Bootstrap)
+    link(href='style/bootstrap-responsive.css', rel='stylesheet')
+    // HTML5 Support for IE
+    //if lt IE 9
+      script(src='js/html5shim.js')
+    // Favicon
+    link(rel='shortcut icon', href='img/favicon/favicon.png')
+  body
+    .navbar.navbar-fixed-top.navbar-inverse
+      .navbar-inner
+        .container
+          // Menu button for smallar screens
+          a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          // Site name for smallar screens
+          a.brand(href='index-2.html')
+            | Site
+            span.bold Name
+          // Navigation starts
+          .nav-collapse.collapse
+            // Links
+            ul.nav.pull-right
+              li.dropdown.pull-right
+                a.dropdown-toggle(data-toggle='dropdown', href='#')
+                  img.nav-user-pic(src='img/user.jpg', alt='')
+                  | Admin
+                  b.caret
+                // Dropdown menu
+                ul.dropdown-menu
+                  li
+                    a(href='#')
+                      i.icon-user
+                      | Profile
+                  li
+                    a(href='#')
+                      i.icon-cogs
+                      | Settings
+                  li#btn-logout
+                    a(href='#')
+                      i.icon-off
+                      | Logout
+    // Main content starts
+    .content
+      // Sidebar
+      .sidebar
+        .sidebar-dropdown
+          a(href='#') Navigation
+        .sidebar-inner
+          // - Sidebar navigation
+          // If the main navigation has sub navigation, then add the class "has_submenu" to "li" of main navigation.
+          ul.navi
+            // Use the class nred, ngreen, nblue, nlightblue, nviolet or norange to add background color. You need to use this in <li> tag.
+            li.nred
+              a(href='#')
+                i.icon-desktop
+                | Dashboard
+            li.has_submenu.nlightblue.current
+              a(href='#')
+                // Menu name with icon
+                i.icon-pencil
+                | Posts
+                // Icon for dropdown
+                span.pull-right
+                  i.icon-angle-right
+              ul
+                li
+                  a(href='widgets1.html') All Post
+                li
+                  a(href='admin-post') Add New
+                li
+                  a(href='widgets2.html') Categories
+                li
+                  a(href='widgets2.html') Tags
+            li.has_submenu.nlightblue
+              a(href='#')
+                // Menu name with icon
+                i.icon-th
+                | Pages
+                // Icon for dropdown
+                span.pull-right
+                  i.icon-angle-right
+              ul
+                li
+                  a(href='widgets1.html') All Pages
+                li
+                  a(href='widgets2.html') Add New
+            li.nred
+              a(href='#')
+                i.icon-comment
+                | comments
+            li.has_submenu.norange
+              a(href='#')
+                // Menu name with icon
+                i.icon-eye-open
+                | Appearance
+                // Icon for dropdown
+                span.pull-right
+                  i.icon-angle-right
+              ul
+                li
+                  a(href='widgets1.html') Theme
+                li
+                  a(href='widgets2.html') Widget
+                li
+                  a(href='widgets2.html') Menus
+                li
+                  a(href='widgets2.html') Header
+                li
+                  a(href='widgets2.html') Background
+                li
+                  a(href='widgets2.html') Editor
+            li.has_submenu.norange
+              a(href='#')
+                // Menu name with icon
+                i.icon-eye-open
+                | Plugins
+                // Icon for dropdown
+                span.pull-right
+                  i.icon-angle-right
+              ul
+                li
+                  a(href='widgets1.html') Installed Plugins
+                li
+                  a(href='widgets2.html') Add New
+                li
+                  a(href='widgets2.html') Editor
+            li.has_submenu.nlightblue
+              a(href='#')
+                // Menu name with icon
+                i.icon-cogs
+                | Settings
+                // Icon for dropdown
+                span.pull-right
+                  i.icon-angle-right
+              ul
+                li
+                  a(href='widgets1.html') General
+                li
+                  a(href='widgets2.html') Writing
+                li
+                  a(href='widgets2.html') Reading
+                li
+                  a(href='widgets2.html') Discussion
+                li
+                  a(href='widgets2.html') Media
+                li
+                  a(href='widgets2.html') Permalinks
+      // Sidebar ends
+      // Main bar
+      .mainbar
+        // Page heading
+        .page-head
+          // Page heading
+          h2.pull-left
+            | Make Post
+            // page meta
+            span.page-meta Something Goes Here
+          // Breadcrumb
+          .bread-crumb.pull-right
+            a(href='index-2.html')
+              i.icon-home
+              | Home
+            // Divider
+            span.divider /
+            a.bread-current(href='#') Make Post
+          .clearfix
+        // Page heading ends
+        // Matter
+        .matter
+          .container-fluid
+            .row-fluid
+              .span8
+                .widget.wviolet
+                  .widget-head
+                    .pull-left Make Post
+                    .widget-icons.pull-right
+                      a.wminimize(href='#')
+                        i.icon-chevron-up
+                      a.wclose(href='#')
+                        i.icon-remove
+                    .clearfix
+                  .widget-content
+                    .padd
+                      input#admin-post-title.span8(type='text', placeholder='Enter Title')
+                      br
+                      .text-area
+                        // Add the "cleditor" to textarea to add CLeditor
+                        textarea#admin-post-content.cleditor(name='input')
+                  .widget-foot Word Count : 205
+                .widget.wblue
+                  .widget-head
+                    .pull-left Other Stuffs
+                    .widget-icons.pull-right
+                      a.wminimize(href='#')
+                        i.icon-chevron-up
+                      a.wclose(href='#')
+                        i.icon-remove
+                    .clearfix
+                  .widget-content
+                    .padd
+                      h6 Excerpt
+                      p You can add your experts here.
+                      .text-area
+                        // Add the "cleditor" to textarea to add CLeditor
+                        textarea.span12(name='input')
+                      hr
+                      h6 Custom Field
+                      p Add your custom fields here
+                      .controls.controls-row
+                        input.span6(type='text', placeholder='Name')
+                        input.span6(type='text', placeholder='Value')
+              // post sidebar
+              .span4
+                .widget.wgreen
+                  .widget-head
+                    .pull-left Details
+                    .widget-icons.pull-right
+                      a.wminimize(href='#')
+                        i.icon-chevron-up
+                      a.wclose(href='#')
+                        i.icon-remove
+                    .clearfix
+                  .widget-content
+                    .padd
+                      h6 Category
+                      label
+                        input(type='checkbox', value='check1')
+                        | General
+                      label
+                        input(type='checkbox', value='check2')
+                        | Latest News
+                      label
+                        input(type='checkbox', value='check3')
+                        | Health
+                      hr
+                      h6 Tags
+                      input.span12(type='text', placeholder='Tags')
+                      button.btn Save Draft
+                      button#admin-publish.btn.btn-info Publish
+                      button.btn.btn-danger Trash
+        // Matter ends
+      // Mainbar ends
+      .clearfix
+    // Content ends
+    // Scroll to top
+    span.totop
+      a(href='#')
+        i.icon-chevron-up
+    // modals
+    script(src='/vendor/jquery.min.js')
+    script(src='/vendor/jquery.form.js')
+    script(src='/vendor/bootstrap-modal.js')
+    script(src='/vendor/bootstrap-transition.js')
+    script(src='/js/controllers/homeController.js')
+    script(src='/js/form-validators/accountValidator.js')
+    script(src='/js/controllers/adminPostController.js')
+    // JS
+    script(src='js/jquery.js')
+    // jQuery
+    script(src='js/bootstrap.js')
+    // Bootstrap
+    script(src='js/jquery-ui-1.10.2.custom.min.js')
+    // jQuery UI
+    script(src='js/fullcalendar.min.js')
+    // Full Google Calendar - Calendar
+    script(src='js/jquery.rateit.min.js')
+    // RateIt - Star rating
+    script(src='js/jquery.prettyPhoto.js')
+    // prettyPhoto
+    // jQuery Flot
+    script(src='js/excanvas.min.js')
+    script(src='js/jquery.flot.js')
+    script(src='js/jquery.flot.resize.js')
+    script(src='js/jquery.flot.pie.js')
+    script(src='js/jquery.flot.stack.js')
+    script(src='js/jquery.gritter.min.js')
+    // jQuery Gritter
+    script(src='js/sparklines.js')
+    // Sparklines
+    script(src='js/jquery.cleditor.min.js')
+    // CLEditor
+    script(src='js/bootstrap-datetimepicker.min.js')
+    // Date picker
+    script(src='js/jquery.toggle.buttons.js')
+    // Bootstrap Toggle
+    script(src='js/filter.js')
+    // Filter for support page
+    script(src='js/custom.js')
+    // Custom codes
+    script(src='js/charts.js')
+    // Custom chart codes

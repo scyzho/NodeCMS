@@ -5,7 +5,7 @@ var app = express();
 
 app.configure(function(){
 	app.set('port', 8080);
-	app.set('views', __dirname + '/app/server/views');
+	app.set('views', __dirname + '/app/server/themes/default/views');
 	app.set('view engine', 'jade');
 	app.locals.pretty = true;
 //	app.use(express.favicon());
@@ -14,8 +14,8 @@ app.configure(function(){
 	app.use(express.cookieParser());
 	app.use(express.session({ secret: 'super-duper-secret-secret' }));
 	app.use(express.methodOverride());
-	app.use(require('stylus').middleware({ src: __dirname + '/app/public' }));
-	app.use(express.static(__dirname + '/app/public'));
+	app.use(require('stylus').middleware({ src: __dirname + '/app/public/themes/default/' }));
+	app.use(express.static(__dirname + '/app/public/themes/default/'));
 });
 
 app.configure('development', function(){
