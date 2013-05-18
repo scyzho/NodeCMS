@@ -8,7 +8,7 @@ var theme = db.collection('themes');
 console.log(ThemeNames);
 
 app.configure(function(){
-	app.set('port', 8081);
+	app.set('port', 8080);
 	app.set('views', __dirname + '/app/server/themes/default/views');
 	app.set('view engine', 'jade');
 	app.locals.pretty = true;
